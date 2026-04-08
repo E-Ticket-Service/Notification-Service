@@ -22,6 +22,13 @@ dependencies {
     // Spring Boot starters
     implementation 'org.springframework.boot:spring-boot-starter-webmvc'
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    implementation 'org.springframework.boot:spring-boot-starter-mail'
+
+    //Kafka
+    implementation 'org.springframework.kafka:spring-kafka'
+
+    // JSON məlumatlarını obyektə çevirmək üçün (Jackson)
+    implementation 'com.fasterxml.jackson.core:jackson-databind'
 
     // PostgreSQL
     runtimeOnly 'org.postgresql:postgresql'
