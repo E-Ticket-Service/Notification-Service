@@ -26,8 +26,8 @@ spring:
   mail:
     host: smtp.gmail.com
     port: 465
-    username: ayla.magerramova23@gmail.com
-    password: iott rzto mtqq blcy
+    username: ${EMAIL_USERNAME}
+    password: ${APP_PASSWORD}
     properties:
       mail:
         smtp:
@@ -38,7 +38,7 @@ spring:
             enable: false
 
   kafka:
-    bootstrap-servers: localhost:9092 # Kafka server ünvanı
+    bootstrap-servers: localhost:9092
     consumer:
       group-id: notification-group
       auto-offset-reset: earliest
