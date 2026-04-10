@@ -1,7 +1,7 @@
 server:
   port: 8084
-#  servlet:
-#    context-path: /api/notification
+  servlet:
+    context-path: /api/notification-service
 
 spring:
   logging:
@@ -58,4 +58,9 @@ spring:
     database-platform: org.hibernate.dialect.PostgreSQLDialect
     open-in-view: false
 
-
+springdoc:
+  api-docs:
+    path: /v3/api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+    enabled: true
