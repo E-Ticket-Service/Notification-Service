@@ -26,8 +26,8 @@ spring:
   mail:
     host: smtp.gmail.com
     port: 465
-    username: ${EMAIL_USERNAME}
-    password: ${APP_PASSWORD}
+    username: ${EMAIL_USERNAME:eticket656@gmail.com}
+    password: ${APP_PASSWORD:mdrfktexkahdsnkc}
     properties:
       mail:
         smtp:
@@ -60,7 +60,8 @@ spring:
 
 springdoc:
   api-docs:
+    enabled: true
     path: /v3/api-docs
   swagger-ui:
     path: /swagger-ui.html
-    enabled: true
+    enabled: false
