@@ -1,6 +1,8 @@
 package abb.tech.notification_service.dto;
 
 import lombok.*;
+
+import java.math.BigDecimal;
 import java.util.List;
 
 @Data
@@ -13,6 +15,8 @@ public class TicketCreatedEvent {
     private String userEmail;
     private List<TicketDetails> tickets;
     private String status;
+    private String paymentIntentId;
+    private BigDecimal totalAmount;
 
     @Data
     @Builder
